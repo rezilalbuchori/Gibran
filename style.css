@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #ff0000, #ffffff);
+    background-image: url(/gibran/Grafiti.jpg);
+    background-position: 1px;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(28, 4, 245, 0.904);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #03c5e7fd;
+    text-shadow: 1px 1px 3px rgba(2, 1, 15, 0.952);
+}
+
+.bio {
+    color: #03c8ebfd;
+    font-weight: 900;
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(15, 5, 5, 0.904);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.link-button i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.link-button.instagram {
+    border-left: 4px solid #e1306c;
+    border-right: 4px solid #e1306c;
+}
+
+.link-button.Spotify {
+    border-left: 4px solid  #08b82ef1;
+    border-right: 4px solid  #08b82ef1;
+}
+
+.link-button.facebook {
+    border-left: 4px solid #1877f2;
+    border-right: 4px solid #1877f2;
+}
+
+.link-button.WhatsApp {
+    border-left: 4px solid  #1ff218;
+    border-right: 4px solid  #1ff218;
+}
+.link-button.instagram:hover {
+    background-color: #e1306c;
+    color: rgb(255, 255, 255);
+}
+
+.link-button.Spotify:hover {
+    background-color:#08b82ef1;
+    color: white;
+}
+
+.link-button.facebook:hover {
+    background-color: #1877f2;
+    color: white;
+}
+
+.link-button.link-button.WhatsApp:hover {
+    background-color:#1ff218;
+    color: white;
+}
+.maps {
+    text-align: center;
+}
+
+button{
+    text-align: center; 
+    background-color: #02d3f8;
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 30px;
+
+}
+
+button:hover{
+    background-color: #f0f7f1;
+}
+
+footer {
+    text-align: center;
+    color: #02d3f8;
+    font-size: 1.0rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.5);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bio {
+        font-size: 0.9rem;
+    }
+
+    .link-button {
+        padding: 15px;
+    }
+}
