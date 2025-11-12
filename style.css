@@ -6,8 +6,8 @@
 
 body{
     font-family: 'segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #ff0000, #ffffff);
-    background-image: url(Grafiti.jpg);
+    background: linear-gradient(135deg, #d63939, #ffffff);
+    background-image: url(/gibran/Grafiti.jpg);
     background-position: 1px;
     color: #333;
     line-height: 1.6;
@@ -27,16 +27,18 @@ header{
     align-items: center;
     margin-bottom: 30px;
     text-align: center;
+    gap: 10px;
 }
 
-profile-pic{
+.profile-pic{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 15px;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 10px rgba(28, 4, 245, 0.904);
+    border: 2px solid #03d7fd;
+    box-shadow: 0 0 25px rgba(3, 215, 253, 0.8);
+
     margin-left: auto;
     margin-right: auto;
 }
