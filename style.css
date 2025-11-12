@@ -1,27 +1,29 @@
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'segoe UI', Roboto, sans-serif;
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, #d63939, #ffffff);
     background-image: url(Grafiti.jpg);
-    background-position: 1px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
 }
 
-.container{
+.container {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,32 +32,28 @@ header{
     gap: 10px;
 }
 
-.profile-pic{
+.profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     border: 2px solid #03d7fd;
     box-shadow: 0 0 25px rgba(3, 215, 253, 0.8);
-
-    margin-left: auto;
-    margin-right: auto;
 }
 
-img{
-    width: 150px;
-    height: 150px;
+.profile-pic img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: center;
     border-radius: 50%;
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 1.8rem;
     color: #03c5e7fd;
-    text-shadow: 1px 1px 3px rgba(2, 1, 15, 0.952);
+    text-shadow: 1px 1px 3px rgba(2, 1, 15, 0.95);
 }
 
 .bio {
@@ -63,7 +61,7 @@ header h1 {
     font-weight: 900;
     max-width: 400px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(15, 5, 5, 0.904);
+    text-shadow: 1px 1px 2px rgba(15, 5, 5, 0.9);
 }
 
 .links {
@@ -85,6 +83,7 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #eee;
+    font-weight: 500;
 }
 
 .link-button:hover {
@@ -101,61 +100,60 @@ header h1 {
     border-left: 4px solid #e1306c;
     border-right: 4px solid #e1306c;
 }
-
-.link-button.Spotify {
-    border-left: 4px solid  #08b82ef1;
-    border-right: 4px solid  #08b82ef1;
+.link-button.spotify {
+    border-left: 4px solid #08b82e;
+    border-right: 4px solid #08b82e;
 }
-
 .link-button.facebook {
     border-left: 4px solid #1877f2;
     border-right: 4px solid #1877f2;
 }
-
-.link-button.WhatsApp {
-    border-left: 4px solid  #1ff218;
-    border-right: 4px solid  #1ff218;
+.link-button.whatsapp {
+    border-left: 4px solid #1ff218;
+    border-right: 4px solid #1ff218;
 }
+
 .link-button.instagram:hover {
     background-color: #e1306c;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
-
-.link-button.Spotify:hover {
-    background-color:#08b82ef1;
-    color: white;
+.link-button.spotify:hover {
+    background-color: #08b82e;
+    color: #fff;
 }
-
 .link-button.facebook:hover {
     background-color: #1877f2;
-    color: white;
+    color: #fff;
+}
+.link-button.whatsapp:hover {
+    background-color: #1ff218;
+    color: #fff;
 }
 
-.link-button.link-button.WhatsApp:hover {
-    background-color:#1ff218;
-    color: white;
-}
 .maps {
     text-align: center;
 }
 
-button{
-    text-align: center; 
+button {
+    text-align: center;
     background-color: #02d3f8;
-    font-size: 30px;
-    padding: 5px 10px;
+    font-size: 1.2rem;
+    padding: 8px 20px;
     border-radius: 30px;
-
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover{
-    background-color: #f0f7f1;
+button:hover {
+    background-color: #0dcaf0;
 }
 
 footer {
     text-align: center;
     color: #02d3f8;
-    font-size: 1.0rem;
+    font-size: 1rem;
     margin-top: 20px;
     text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.5);
 }
@@ -179,6 +177,6 @@ footer {
     }
 
     .link-button {
-        padding: 15px;
+        padding: 12px;
     }
 }
